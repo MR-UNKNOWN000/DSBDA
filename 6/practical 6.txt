@@ -1,0 +1,91 @@
+Here’s a complete breakdown of your **DSBDA Practical 6** (Naive Bayes on the Iris dataset) to help you prepare for your viva:
+
+---
+
+### ✅ **Purpose of the Code**
+
+To classify iris flowers into species (Setosa, Versicolor, Virginica) using the **Naive Bayes classification algorithm** and evaluate model performance using metrics like accuracy, precision, recall, F1-score, and confusion matrix.
+
+---
+
+### ✅ **Theory of the Code**
+
+* **Dataset**: Iris dataset with features like SepalLength, SepalWidth, PetalLength, PetalWidth.
+* **Label Encoding**: The target column (Species) is categorical and must be converted to numeric using `LabelEncoder`.
+* **Train-Test Split**: Data is split into training (70%) and testing (30%) to evaluate model performance.
+* **Naive Bayes Classifier**: Uses `GaussianNB()` which assumes features are normally distributed.
+* **Predictions**: Model predicts species on the test set.
+* **Evaluation**:
+
+  * Confusion Matrix: To visualize prediction performance.
+  * Metrics: Accuracy, Precision, Recall, F1-score.
+
+---
+
+### ✅ **How to Execute the Code**
+
+1. Ensure `Iris.csv` is in your working directory.
+2. Install required libraries if not already (`sklearn`, `matplotlib`, `pandas`, `seaborn`, `numpy`).
+3. Run the Python script or Jupyter notebook cell by cell.
+4. Observe the outputs (metrics, prediction, confusion matrix).
+
+---
+
+### ✅ **Theory About the Output**
+
+* You’ll get a **confusion matrix** plot showing how well the model predicted each species.
+* Classification report will provide **precision, recall, F1-score, and accuracy** per class.
+* The console will show detailed values like:
+
+  * True Positives (TP), False Positives (FP), etc.
+  * Sensitivity (Recall)
+  * Specificity
+  * False Positive Rate
+  * Error Rate
+
+---
+
+### ✅ **Conclusion**
+
+* The Naive Bayes classifier works well for Iris dataset classification.
+* Model evaluation metrics confirm its effectiveness.
+* Confusion matrix visually confirms classification correctness.
+* Feature independence assumption in Naive Bayes may not always be perfect but performs well on small datasets like Iris.
+
+---
+
+### ✅ **10 Viva Questions with Answers**
+
+1. **Q: What algorithm did you use?**
+   A: Gaussian Naive Bayes classification.
+
+2. **Q: Why do we use Naive Bayes here?**
+   A: It's simple, efficient, and performs well for multiclass classification with normally distributed features.
+
+3. **Q: What is the Iris dataset?**
+   A: A dataset containing 150 rows of iris flowers with features and species labels.
+
+4. **Q: Why did you use LabelEncoder?**
+   A: To convert string labels (species names) into numeric format for the classifier.
+
+5. **Q: What does the confusion matrix represent?**
+   A: It shows the count of correct and incorrect predictions per class.
+
+6. **Q: What is precision and recall?**
+   A: Precision is the ratio of true positives to predicted positives; Recall is the ratio of true positives to actual positives.
+
+7. **Q: What is the meaning of sensitivity in this context?**
+   A: It's the same as recall – the ability to identify true positives.
+
+8. **Q: What does a higher F1-score mean?**
+   A: It means a good balance between precision and recall.
+
+9. **Q: What is the assumption in Gaussian Naive Bayes?**
+   A: Features are normally distributed and conditionally independent given the class.
+
+10. **Q: What does the accuracy score tell us?**
+    A: The overall proportion of correct predictions made by the model.
+
+---
+
+Would you also like a quick one-pager summary or notes format to revise before your viva?

@@ -1,0 +1,111 @@
+Here’s a complete practical explanation and oral prep guide for **DSBDA Practical 8** based on your code:
+
+---
+
+## ✅ **Title**:
+
+**Data Visualization using Matplotlib and Seaborn (Titanic Dataset)**
+
+---
+
+## ✅ **Purpose of the Code**:
+
+To analyze and visualize the Titanic dataset using various plots to understand passenger survival patterns based on fare, age, class, and gender.
+
+---
+
+## ✅ **How to Execute the Code**:
+
+1. Ensure `titanic.csv` is in your working directory.
+2. Open Jupyter Notebook or any IDE.
+3. Run each code cell step-by-step.
+4. Required Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`.
+
+---
+
+## ✅ **Theory Behind the Code**:
+
+### 🔹 **Data Loading and Inspection**
+
+* `pd.read_csv()` is used to load the Titanic dataset.
+* `.info()`, `.describe()`, `.shape` give information about structure, summary stats, and dataset dimensions.
+
+### 🔹 **Visualization using Seaborn**
+
+1. **`sns.histplot(Fare)`**:
+
+   * Shows distribution of passenger fares.
+   * Helps detect skewed pricing and fare patterns.
+
+2. **`sns.displot(Age)`**:
+
+   * Histogram showing distribution of passenger ages with 70 bins.
+   * Useful to identify age demographics.
+
+3. **`sns.catplot(Survived vs Pclass)`**:
+
+   * Categorical plot showing number of survivors grouped by passenger class (1st, 2nd, 3rd).
+   * Helps analyze survival rate per class.
+
+4. **`sns.catplot(Survived vs Sex)`**:
+
+   * Compares survival count between males and females.
+   * Useful for gender-based survival insight.
+
+---
+
+## ✅ **Conclusion**:
+
+* Data visualization reveals that:
+
+  * Younger and 1st-class passengers had better survival rates.
+  * Female passengers survived at a significantly higher rate than males.
+  * Fare values are right-skewed, with a few very high fares.
+* Seaborn provides powerful visual insight into categorical and continuous variables.
+
+---
+
+## ✅ **Output Interpretation**:
+
+* **Fare Histogram**: Shows most fares are clustered below \$100, indicating few passengers paid premium.
+* **Age Distribution**: Highlights that most passengers were between 20–40 years old.
+* **Survived vs Pclass Plot**: 1st class had higher survival, indicating social status impacted survival chances.
+* **Survived vs Sex Plot**: Women had a higher survival rate due to “women and children first” policy.
+
+---
+
+## ✅ **10 Viva Questions & Answers**:
+
+1. **Q: What is the purpose of this practical?**
+   **A:** To visualize data using seaborn and matplotlib and find patterns in the Titanic dataset.
+
+2. **Q: What does `sns.histplot()` do?**
+   **A:** It creates a histogram to visualize the distribution of a numerical variable.
+
+3. **Q: What is a `catplot` used for?**
+   **A:** It’s used for visualizing categorical variables (e.g., count of survivors by class or gender).
+
+4. **Q: What does the Titanic dataset contain?**
+   **A:** Passenger information like age, sex, class, fare, and survival status from the Titanic shipwreck.
+
+5. **Q: How do you change the figure size?**
+   **A:** By using `sns.set(rc={'figure.figsize':(width,height)})`.
+
+6. **Q: What does the hue parameter do in seaborn?**
+   **A:** It adds color separation by another category (e.g., hue='Sex' separates male and female).
+
+7. **Q: What insight does the Fare plot give?**
+   **A:** It shows most passengers paid lower fares; few paid very high.
+
+8. **Q: What type of plot is best for comparing survival across classes?**
+   **A:** `catplot` is best to visualize count differences across classes.
+
+9. **Q: What is `%matplotlib inline` used for?**
+   **A:** It ensures that plots are displayed inline in a Jupyter Notebook.
+
+10. **Q: Why do we use `.info()` before plotting?**
+    **A:** To understand the data types and check for missing values or incorrect formats.
+
+---
+
+Let me know if you want a one-page printable cheat sheet or revision PDF for this practical!

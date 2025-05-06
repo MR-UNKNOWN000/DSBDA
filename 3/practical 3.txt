@@ -1,0 +1,108 @@
+Great — here’s a complete guide for your DSBDA Practical 3 based on your provided code:
+
+---
+
+### ✅ **Title**:
+
+**Statistical Analysis and Visualization using Pandas and Seaborn (Loan & Iris Dataset)**
+
+---
+
+### ✅ **Purpose of the Code**:
+
+To perform descriptive statistics and data analysis on the loan and iris datasets using `pandas`, `numpy`, and `seaborn`, including measures like mean, median, standard deviation, mode, and data visualization techniques.
+
+---
+
+### ✅ **How to Execute the Code**:
+
+1. Ensure the datasets `loan_data.csv` and `iris.csv` are in your working directory.
+2. Run the Python script in a Jupyter Notebook or any Python IDE.
+3. Required libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`.
+
+---
+
+### ✅ **Theory Behind the Code**:
+
+#### 🔹 Part 1: Loan Dataset
+
+* **Read data using pandas**: `read_csv()` to load `loan_data.csv`.
+* **Exploratory Data Analysis**:
+
+  * `.head()`, `.tail()`, `.info()`, `.describe()` to inspect structure.
+  * `.isnull().sum()` to check missing values.
+* **Statistical Measures**:
+
+  * `mean()`, `median()`, `min()`, `std()` give central tendency and dispersion.
+  * Grouping by `Age` helps understand how many entries exist for each age.
+
+#### 🔹 Part 2: Iris Dataset
+
+* **Reading Iris data** similarly.
+* **Group by `Species`** to count entries and calculate means.
+* **Statistical Measures**: `.mode()`, `.std()`, `.skew()`.
+* **Visualization**:
+
+  * `seaborn.violinplot()` is used to show distribution of `SepalWidthCm` per species.
+* **Correlation Matrix**:
+
+  * `.corr()` computes Pearson correlation between numeric features.
+
+---
+
+### ✅ **Conclusion**:
+
+The practical demonstrates how to:
+
+* Load and explore real-world datasets.
+* Perform basic and advanced statistical analysis.
+* Visualize feature distributions and relationships.
+* Understand class-wise statistics using grouping.
+
+---
+
+### ✅ **Output Theory**:
+
+* **`mean`, `median`, `std`**: Shows distribution of numerical fields like `Age`, `LoanAmount`.
+* **`groupby('Species').mean()`**: Highlights differences in petal/sepal measurements among iris species.
+* **`violinplot()`**: Graphically shows the spread and distribution of `SepalWidthCm` per species.
+* **`correlation_matrix`**: Identifies which features have strong/weak linear relationships.
+* **`.skew()`**: Indicates how symmetrical or skewed the data distribution is.
+
+---
+
+### ✅ **10 Viva Questions & Answers**:
+
+1. **Q: What is the purpose of `data.info()`?**
+   **A:** It shows the structure, non-null counts, and data types of the dataset.
+
+2. **Q: How do you calculate the mean of a column in pandas?**
+   **A:** Using `.mean()` on a column or dataframe.
+
+3. **Q: What is the use of `.groupby()`?**
+   **A:** It groups data based on column values to perform aggregate operations like count, mean, etc.
+
+4. **Q: What does `.skew()` tell us?**
+   **A:** It tells whether data is symmetrically distributed or skewed.
+
+5. **Q: What is a violin plot used for?**
+   **A:** It shows the distribution, median, and range of numerical data across categories.
+
+6. **Q: What kind of correlation does `.corr()` show?**
+   **A:** It shows Pearson correlation by default (linear relationships).
+
+7. **Q: What is standard deviation?**
+   **A:** It measures the spread or variability of a data set.
+
+8. **Q: What is mode in statistics?**
+   **A:** The value that appears most frequently in a dataset.
+
+9. **Q: What does `.describe()` give you?**
+   **A:** Summary statistics like mean, min, max, std, quartiles for numerical columns.
+
+10. **Q: How do you handle missing values in pandas?**
+    **A:** Using `.dropna()` to remove or `.fillna()` to impute them.
+
+---
+
+If you'd like, I can also help you summarize this as a printable sheet for quick revision. Want that?

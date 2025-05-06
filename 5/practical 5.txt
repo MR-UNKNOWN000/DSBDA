@@ -1,0 +1,103 @@
+Here’s a complete **step-by-step explanation** for **Practical 5** of your **DSBDA practical exam**, based on the Logistic Regression code you shared:
+
+---
+
+## ✅ **Title**:
+
+**Logistic Regression on Social Network Ads Dataset**
+
+---
+
+## ✅ **Purpose**:
+
+To build a **binary classification model** using **Logistic Regression** that predicts whether a user will purchase a product based on their **Age** and **Estimated Salary**.
+
+---
+
+## ✅ **Execution Steps (in simple terms)**:
+
+1. **Import Libraries**: Required for data handling, visualization, and ML modeling.
+2. **Load Data**: Reads `Social_Network_Ads.csv` containing features like Age, Salary, and Purchase status.
+3. **EDA (Exploratory Data Analysis)**:
+
+   * Check structure, summary statistics, and missing values.
+4. **Feature Selection**:
+
+   * Inputs (`x`): Age and Estimated Salary.
+   * Target (`y`): Purchased (0 or 1).
+5. **Data Splitting**: Split into training and testing data (75% train, 25% test).
+6. **Feature Scaling**: Standardize features for better model performance.
+7. **Train Logistic Regression**: Fit the model on training data.
+8. **Make Predictions**: Predict test data outcomes.
+9. **Evaluate Model**:
+
+   * Confusion matrix
+   * Classification report
+   * Accuracy, Error Rate, Precision, Recall, F1-score
+10. **Visualize Results**: Display confusion matrix using `ConfusionMatrixDisplay`.
+
+---
+
+## ✅ **Theory (What the code does)**:
+
+* **Logistic Regression** is used for **binary classification**.
+* It outputs probabilities and then classifies based on a threshold (typically 0.5).
+* This model predicts whether a person buys a product or not based on features like **Age** and **Estimated Salary**.
+
+---
+
+## ✅ **Theory of Output**:
+
+* **`Confusion Matrix`**: Shows correct and incorrect predictions (True Positive, False Negative, etc.).
+* **Classification Report**: Gives precision, recall, F1-score per class.
+* **Accuracy**: Percentage of correctly predicted instances.
+* **Error Rate**: Fraction of incorrect predictions.
+* **Sensitivity (Recall)**: How many actual positives were correctly predicted.
+* **Specificity**: How many actual negatives were correctly identified.
+* **Precision**: Of predicted positives, how many were actually positive.
+
+---
+
+## ✅ **Conclusion**:
+
+* The logistic regression model was successfully trained and tested.
+* It can now predict customer purchase behavior based on age and salary.
+* Performance metrics and visualizations confirm how well the model performs.
+
+---
+
+## ✅ **10 Viva Questions & Answers**:
+
+1. **Q: What type of algorithm is logistic regression?**
+   **A:** It is a **supervised classification** algorithm.
+
+2. **Q: Why do we use StandardScaler?**
+   **A:** To **normalize** the features so that they have zero mean and unit variance.
+
+3. **Q: What is the use of the confusion matrix?**
+   **A:** To evaluate the performance of the classification model.
+
+4. **Q: What is the formula for logistic regression?**
+   **A:** `P = 1 / (1 + e^(-z))`, where z = linear combination of input features.
+
+5. **Q: What are TP, FP, TN, FN?**
+   **A:** True/False Positives and Negatives – they define prediction outcomes.
+
+6. **Q: What does a high recall mean?**
+   **A:** The model correctly predicted most of the actual positives.
+
+7. **Q: Why use `.reshape(-1)` after confusion matrix?**
+   **A:** To extract TP, FN, FP, TN as individual values from a 2x2 matrix.
+
+8. **Q: What does accuracy\_score() return?**
+   **A:** The percentage of correct predictions.
+
+9. **Q: What does precision\_score() measure?**
+   **A:** It measures the accuracy of positive predictions.
+
+10. **Q: What is logistic regression mainly used for?**
+    **A:** For **binary classification problems**, like spam detection or yes/no decisions.
+
+---
+
+Let me know if you want a revision sheet or PDF for all practicals!

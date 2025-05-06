@@ -1,0 +1,99 @@
+Here is a **complete and organized explanation for Practical 9** of your **DSBDA** lab, based on your code:
+
+---
+
+## ✅ **Title**:
+
+**Data Visualization Using Seaborn – Titanic Dataset**
+
+---
+
+## ✅ **Purpose**:
+
+To visually analyze survival statistics from the Titanic dataset using **box plots** and **count plots**. The objective is to explore how gender and age relate to survival probability.
+
+---
+
+## ✅ **How to Execute**:
+
+1. Open Jupyter Notebook or any Python IDE.
+2. Ensure `seaborn` is installed (`pip install seaborn`).
+3. The Titanic dataset is automatically loaded via `sns.load_dataset()`.
+4. Run each line step by step to generate visualizations.
+
+---
+
+## ✅ **Theory Behind Each Step**:
+
+### 🔹 Load Titanic Dataset
+
+* `sns.load_dataset('titanic')` fetches Titanic passenger data including attributes like `sex`, `age`, and `survived`.
+
+### 🔹 `sns.boxplot(x='sex', y='age', data=df, hue='survived')`
+
+* This boxplot shows the **age distribution of male and female passengers**, split by **survival status**.
+* Helps identify survival trends across age groups and genders.
+
+### 🔹 `sns.catplot(x='survived',data=df, kind='count',hue='sex')`
+
+* A count plot showing **number of survivors vs. non-survivors**.
+* The `hue='sex'` adds a gender dimension to the survival statistics.
+
+---
+
+## ✅ **Conclusion**:
+
+* Boxplots reveal that **younger passengers and females** were more likely to survive.
+* Count plots show that **more females survived** compared to males.
+* Visualization gives **quick insights into trends** that may not be obvious from raw data.
+
+---
+
+## ✅ **Theory of Output**:
+
+1. **Box Plot**:
+
+   * Shows **central age tendency** (median) and **distribution**.
+   * Clear difference in **age survival patterns** between males and females.
+2. **Count Plot**:
+
+   * Displays actual **counts** of survivors vs. non-survivors.
+   * Helps compare **male vs. female survival rate**.
+
+---
+
+## ✅ **10 Viva Questions & Answers**:
+
+1. **Q: What is the purpose of this practical?**
+   **A:** To visualize and compare Titanic survival rates using Seaborn plots.
+
+2. **Q: What does the box plot show?**
+   **A:** Age distribution per gender, divided by survival status.
+
+3. **Q: Why use hue in boxplot and catplot?**
+   **A:** To differentiate categories (e.g., survived vs. not) within another category (e.g., sex).
+
+4. **Q: What does the count plot reveal?**
+   **A:** The number of people who survived or didn’t, split by gender.
+
+5. **Q: What does the median line in a box plot represent?**
+   **A:** The middle value of the dataset (50th percentile).
+
+6. **Q: What are outliers in a box plot?**
+   **A:** Data points that fall far from the rest of the distribution.
+
+7. **Q: What dataset is used in this practical?**
+   **A:** The Titanic dataset, loaded via Seaborn.
+
+8. **Q: How is Seaborn different from Matplotlib?**
+   **A:** Seaborn is built on Matplotlib and provides more visually appealing, high-level API for statistical graphics.
+
+9. **Q: What is the function of `sns.set(rc={'figure.figsize':(5,5)})`?**
+   **A:** To set the size of the figure (width, height in inches).
+
+10. **Q: Can we analyze numeric and categorical data together?**
+    **A:** Yes, plots like boxplots and catplots allow combining numeric and categorical analysis.
+
+---
+
+Let me know if you’d like a one-page PDF summary for revision or help with another practical!
